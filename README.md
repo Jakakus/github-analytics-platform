@@ -17,25 +17,36 @@ A modern, AI-powered analytics platform for GitHub repositories, users, trending
 ---
 
 ## 🖼️ Preview
+
+Get a quick look at the GitHub Analytics Platform in action:
+
 ![GitHub Analytics Platform Screenshot](./screenshots/screenshot.png)
+
+---
 
 ## 🖼️ App Walkthrough
 
-### Welcome & Onboarding
+### 1. Welcome & Onboarding
 ![Welcome Screen](./screenshots/welcome.png)
-Start with a clean, modern onboarding screen. Instantly search for any GitHub repository, user, or trending topic using the AI-powered search bar. The platform highlights its core features: repository analytics, trending discovery, and Gemini AI insights.
+Start on a clean, modern welcome screen. Instantly search for any GitHub repository, user, or trending topic using the AI-powered search bar. Core features—analytics, discovery, and AI insights—are highlighted for easy onboarding.
 
-### Discovering Data Visualization Projects
+---
+
+### 2. Discover Trending & Relevant Projects
 ![Data Visualization Search](./screenshots/datareact.png)
-Search for trending or popular repositories by keyword or technology. Here, the user searches for "data visualization react" and receives a curated list of top repositories, including stars, language, and concise descriptions.
+Search by keyword or technology (e.g., "data visualization react") to discover trending and popular repositories. Results include stars, language, and concise project descriptions.
 
-### Repository Search: Visual Studio Code
+---
+
+### 3. Deep-Dive Repository Analysis
 ![VSCode Search](./screenshots/microsoftvscode.png)
-Analyze any public GitHub repository by name. The app fetches real-time data and prepares a detailed analysis pipeline for the selected project.
+Analyze any public GitHub repository (e.g., `microsoft/vscode`). The app fetches real-time data and prepares a detailed, multi-stage analysis pipeline.
 
-### AI-Powered Repository Analysis
+---
+
+### 4. Actionable AI Insights
 ![VSCode AI Analysis](./screenshots/microsoftvscodeanalysis.png)
-Get actionable, AI-generated insights for any repository. The platform summarizes key metrics, community trends, and technology choices using Gemini AI, helping developers and teams make smarter decisions.
+Get instant, AI-generated insights for any repository. Gemini AI summarizes key metrics, community trends, and technology choices—helping you make smarter decisions.
 
 ---
 
