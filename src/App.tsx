@@ -216,10 +216,8 @@ function App() {
   }
 
   // Utility: Format repo entry for search/trending results
-  function formatRepo(repo: any, i: number): string {
-    if (!repo.full_name || !repo.html_url) return `${i + 1}. (Missing repository data)`;
-    // Deprioritize config/script-only repos (move them to the end)
-    const configKeywords = ['config', 'setup', 'dotfiles', 'init', 'install', 'build', 'script'];
+  function formatRepo(repo: any): string {
+    if (!repo.full_name || !repo.html_url) return `(Missing repository data)`;
     // Format stats line
     const stats = `⭐ ${repo.stargazers_count?.toLocaleString?.() ?? 0} | 🍴 ${repo.forks_count?.toLocaleString?.() ?? 0} | ${repo.language || 'Multiple'}`;
     // Format description
@@ -364,7 +362,7 @@ Analysis completed at ${new Date().toLocaleTimeString()}`;
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">AI-powered insights for repositories, users, trending topics, and search queries. Powered by real-time GitHub data and Gemini AI.</p>
             <div className="mb-2">
               <span className="font-medium text-gray-700 dark:text-gray-200">Try asking:</span>
-              {SUGGESTIONS.map((s, i) => (
+              {SUGGESTIONS.map((s) => (
                 <button
                   key={s}
                   className="ml-2 mb-1 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs font-semibold hover:bg-blue-200 dark:hover:bg-blue-800 transition"
