@@ -14,13 +14,6 @@ A modern, AI-powered analytics platform for GitHub repositories, users, trending
 - **Gemini AI Integration:** Summarizes and explains results with concise, actionable insights.
 - **Modern UI/UX:** Clean, responsive, and user-friendly interface with instant onboarding.
 
----
-
-## 🖼️ Preview
-
-Get a quick look at the GitHub Analytics Platform in action:
-
-![GitHub Analytics Platform Screenshot](./screenshots/screenshot.png)
 
 ---
 
