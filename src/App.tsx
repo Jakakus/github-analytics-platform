@@ -220,7 +220,6 @@ function App() {
     if (!repo.full_name || !repo.html_url) return `${i + 1}. (Missing repository data)`;
     // Deprioritize config/script-only repos (move them to the end)
     const configKeywords = ['config', 'setup', 'dotfiles', 'init', 'install', 'build', 'script'];
-    const isConfig = configKeywords.some(k => repo.full_name.toLowerCase().includes(k) || (repo.description || '').toLowerCase().includes(k));
     // Format stats line
     const stats = `⭐ ${repo.stargazers_count?.toLocaleString?.() ?? 0} | 🍴 ${repo.forks_count?.toLocaleString?.() ?? 0} | ${repo.language || 'Multiple'}`;
     // Format description
