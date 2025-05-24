@@ -15,7 +15,25 @@ A modern, AI-powered analytics platform for GitHub repositories, users, trending
 ---
 
 ## 🖼️ Preview
-![GitHub Analytics Platform Screenshot](./screenshot.png)
+![GitHub Analytics Platform Screenshot](./screenshots/screenshot.png)
+
+## 🖼️ App Walkthrough
+
+### Welcome & Onboarding
+![Welcome Screen](./screenshots/welcome.png)
+Start with a clean, modern onboarding screen. Instantly search for any GitHub repository, user, or trending topic using the AI-powered search bar. The platform highlights its core features: repository analytics, trending discovery, and Gemini AI insights.
+
+### Discovering Data Visualization Projects
+![Data Visualization Search](./screenshots/datareact.png)
+Search for trending or popular repositories by keyword or technology. Here, the user searches for "data visualization react" and receives a curated list of top repositories, including stars, language, and concise descriptions.
+
+### Repository Search: Visual Studio Code
+![VSCode Search](./screenshots/microsoftvscode.png)
+Analyze any public GitHub repository by name. The app fetches real-time data and prepares a detailed analysis pipeline for the selected project.
+
+### AI-Powered Repository Analysis
+![VSCode AI Analysis](./screenshots/microsoftvscodeanalysis.png)
+Get actionable, AI-generated insights for any repository. The platform summarizes key metrics, community trends, and technology choices using Gemini AI, helping developers and teams make smarter decisions.
 
 ---
 
