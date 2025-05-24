@@ -354,26 +354,8 @@ Analysis completed at ${new Date().toLocaleTimeString()}`;
     <div className={`min-h-screen flex flex-col transition-colors duration-200 ${darkMode ? 'dark' : ''}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
-      <main className="flex-1 flex flex-col md:flex-row container mx-auto p-4 gap-4">
+      <main className="flex-1 flex flex-col md:flex-row max-w-6xl mx-auto p-4 gap-4">
         <div className="flex-1 bg-white dark:bg-gray-900 rounded-lg shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800 transition-colors duration-200">
-          {/* Intro section */}
-          <div className="p-4 border-b border-gray-100 dark:border-gray-800">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">GitHub Analytics Platform</h1>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">AI-powered insights for repositories, users, trending topics, and search queries. Powered by real-time GitHub data and Gemini AI.</p>
-            <div className="mb-2">
-              <span className="font-medium text-gray-700 dark:text-gray-200">Try asking:</span>
-              {SUGGESTIONS.map((s) => (
-                <button
-                  key={s}
-                  className="ml-2 mb-1 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs font-semibold hover:bg-blue-200 dark:hover:bg-blue-800 transition"
-                  onClick={() => handleSuggestionClick(s)}
-                  disabled={thinking}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
           {/* Chat container */}
           <ChatContainer 
             messages={messages} 

@@ -23,7 +23,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ messages, onSendMessage, 
     <div className="flex flex-col h-full">
       <div className="flex-1 overflow-y-auto">
         {messages.length === 0 ? (
-          <WelcomeScreen />
+          <WelcomeScreen onSendMessage={onSendMessage} disabled={thinking} />
         ) : (
           <div className="p-4">
             {messages.map((message) => (
@@ -43,7 +43,9 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ messages, onSendMessage, 
         )}
       </div>
       
-      <ChatInput onSendMessage={onSendMessage} disabled={thinking} inputValue={inputValue} setInputValue={setInputValue} />
+      {messages.length > 0 && (
+        <ChatInput onSendMessage={onSendMessage} disabled={thinking} inputValue={inputValue} setInputValue={setInputValue} />
+      )}
     </div>
   );
 };

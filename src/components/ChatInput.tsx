@@ -17,10 +17,10 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, disabled, inputVal
   const setInput = setInputValue !== undefined ? setInputValue : setInternalInput;
 
   const suggestions = [
-    "facebook/react",
+    "microsoft/vscode",
     "@torvalds",
-    "trending javascript",
-    "machine learning python"
+    "trending typescript",
+    "data visualization react"
   ];
   
   const handleSubmit = (e: React.FormEvent) => {
