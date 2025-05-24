@@ -1,5 +1,7 @@
 # GitHub Analytics Platform
 
+## 🚀 [Live Demo on Vercel](https://aigithubanalytics.vercel.app/)
+
 A modern, AI-powered analytics platform for GitHub repositories, users, trending projects, and custom searches. Built with React, TypeScript, Vite, and Gemini AI for actionable developer insights.
 
 ---
