@@ -1,14 +1,6 @@
 import React from 'react';
 import { Github, BarChart3, Star, TrendingUp, Users } from 'lucide-react';
 import ChatInput from './ChatInput';
-import { Sparkles } from 'lucide-react';
-
-const SUGGESTIONS = [
-  "microsoft/vscode",
-  "@torvalds",
-  "trending typescript",
-  "data visualization react"
-];
 
 const WelcomeScreen: React.FC<{ onSendMessage?: (msg: string) => void, disabled?: boolean }> = ({ onSendMessage = () => {}, disabled = false }) => {
   return (

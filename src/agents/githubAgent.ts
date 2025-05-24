@@ -36,7 +36,7 @@ function cleanInsightsMarkdown(md: string): string {
   }
 
   // Ensure all bullets are proper sentences (capitalize, end with period)
-  md = md.replace(/\* ([a-z])/g, (m, p1) => `* ${p1.toUpperCase()}`);
+  md = md.replace(/\* ([a-z])/g, (_match, p1) => `* ${p1.toUpperCase()}`);
   md = md.replace(/([^.])\n\*/g, '$1.\n*');
 
   return md.trim();

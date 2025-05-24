@@ -5,14 +5,6 @@ import AgentWorkflow from './components/AgentWorkflow';
 import { Message, ProcessingState } from './types';
 import { githubAgent } from './agents/githubAgent';
 
-// Suggestions for onboarding
-const SUGGESTIONS = [
-  'microsoft/vscode',
-  '@gaearon',
-  'trending typescript',
-  'data visualization react'
-];
-
 // Mock workflow state for GitHub Analytics
 const getGitHubProcessingState = (): ProcessingState => ({
   steps: [],
@@ -342,12 +334,6 @@ Analysis completed at ${new Date().toLocaleTimeString()}`;
     } finally {
       setThinking(false);
     }
-  };
-
-  // Handle suggestion click
-  const handleSuggestionClick = (suggestion: string) => {
-    setInputValue('');
-    handleSendMessage(suggestion);
   };
   
   return (
